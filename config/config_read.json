@@ -2,20 +2,20 @@
   {"command":"get"},
   {"source": [
 	{"endpoint": "http://localhost:9047/"},
-	{"username": "<DREMIO-ADMIN-USER>"},
-	{"password": "<OPTIONAL_PASSWORD>"},
-	{"verify_ssl": "True"},
+	{"username": "admin"},
+	{"password": "admin123"},
+	{"verify_ssl": "False"},
 	{"is_community_edition": "False"},
 	{"graph_api_support": "True"}]
   },
   {"target": [
-	{"filename":"<TARGET_JSON_FILE_NAME>"},
+	{"directory":"/Users/tej/dremio/cloner_test"},
 	{"overwrite": "False"}]
   },
   {"options": [
 	{"logging.level":"logging.DEBUG"},
 	{"logging.format":"%(levelname)s:%(asctime)s:%(message)s"},
-	{"logging.filename":"<OPTIONAL_LOG_FILE_NAME>"},
+	{"logging.filename":"/Users/tej/dremio_cloner_test.log"},
 	{"logging.verbose": "False"},
 
 	{"max_errors":"9999"},
@@ -38,14 +38,14 @@
 
 
 	{"space.filter": "*"},
-	{"space.filter.names": ["MySpace1", "MySpace2", "NewSpace"]},
+	{"space.filter.names": []},
 	{"space.exclude.filter": ""},
 	{"space.folder.filter":"*"},
 	{"space.folder.exclude.filter":""},
 
 	{"source.filter":"*"},
-	{"source.filter.names": ["Source1", "Source2", "Source3"]},
-	{"source.filter.types": ["S3", "POSTGRES", "NAS"]},
+	{"source.filter.names": []},
+	{"source.filter.types": []},
 	{"source.exclude.filter":""},
 	{"source.folder.filter":"*"},
 	{"source.folder.exclude.filter":""},
