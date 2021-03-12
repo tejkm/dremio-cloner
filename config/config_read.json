@@ -27,7 +27,7 @@
 	{"source.process_mode":"process"},
 	{"reflection.process_mode": "process"},
 	{"wlm.queue.process_mode": "process"},
-	{"wlm.rule.process_mode": "process"},
+	{"wlm.rule.process_mode": "skip"},
 	{"wiki.process_mode": "process"},
 	{"tag.process_mode": "process"},
 	{"home.process_mode": "process"},
